@@ -30,5 +30,26 @@ return [
         ],
     ],
 
+    'document' => [
+        'title' => 'Document',
+
+        'actions' => [
+            'index' => 'Document',
+            'create' => 'New Document',
+            'edit' => 'Edit :name',
+            'will_be_published' => 'Document will be published at',
+        ],
+
+        'columns' => [
+            'id' => 'ID',
+            'title' => 'Title',
+            'slug' => 'Slug',
+            'perex' => 'Perex',
+            'published_at' => 'Published at',
+            'enabled' => 'Enabled',
+            
+        ],
+    ],
+
     // Do not delete me :) I'm used for auto-generation
 ];
