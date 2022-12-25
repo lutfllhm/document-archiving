@@ -106,7 +106,7 @@ class FillDefaultAdminUserAndPermissions extends Migration
             [
                 'first_name' => 'Administrator',
                 'last_name' => 'Administrator',
-                'email' => 'administrator@brackets.sk',
+                'email' => 'admin@email.com',
                 'password' => Hash::make($this->password),
                 'remember_token' => null,
                 'created_at' => Carbon::now(),
@@ -164,9 +164,9 @@ class FillDefaultAdminUserAndPermissions extends Migration
                 $permissionItems = DB::table('permissions')
                     ->whereIn('name', $permissions)
                     ->where(
-                    'guard_name',
-                    $role['guard_name']
-                )->get();
+                        'guard_name',
+                        $role['guard_name']
+                    )->get();
                 foreach ($permissionItems as $permissionItem) {
                     $roleHasPermissionData = [
                         'permission_id' => $permissionItem->id,
