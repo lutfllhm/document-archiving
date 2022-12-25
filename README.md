@@ -5,6 +5,10 @@ How to use
 ```
 git clone https://github.com/lutfllhm/document-archiving.git
 ```
+Migrate Data
+```
+php artisan migrate
+```
 
 How to run
 ```
