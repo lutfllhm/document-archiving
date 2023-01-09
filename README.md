@@ -20,8 +20,13 @@ php artisan serve
 - [x] Auth User
 - [x] CRUD User
 - [x] Add PDF Uploader
-- [ ] Edit PDF File
+- [x] Edit PDF File
 - [x] Edit Footer
 - [x] Edit Title
 - [ ] Add Meta Icon
 - [ ] Remove Unused Variables
+
+If PDF Uploader doesn't work, you need to run the program
+```
+npm run dev
+````
