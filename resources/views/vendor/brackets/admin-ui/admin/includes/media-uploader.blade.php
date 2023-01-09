@@ -4,7 +4,7 @@
 	@else
 		<i class="fa fa-file-o"></i>
 	@endif
-	
+
 	@if(isset($label))
 		{{ $label }}
 	@endif

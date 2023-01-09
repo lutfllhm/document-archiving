@@ -1,18 +1,18 @@
-import AppForm from '../app-components/Form/AppForm';
+import AppForm from "../app-components/Form/AppForm";
 
-Vue.component('document-form', {
+Vue.component("document-form", {
     mixins: [AppForm],
-    data: function() {
+    data: function () {
         return {
             form: {
-                title:  '' ,
-                slug:  '' ,
-                perex:  '' ,
-                published_at:  '' ,
-                enabled:  false ,
-                
-            }
-        }
-    }
-
+                title: "",
+                slug: "",
+                perex: "",
+                published_at: "",
+                enabled: true,
+            },
+            // Define Media Collection UI
+            mediaCollections: ["pdf"],
+        };
+    },
 });
