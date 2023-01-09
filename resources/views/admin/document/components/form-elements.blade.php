@@ -39,6 +39,6 @@
 <!-- Define Media Uploader -->
 @include('brackets/admin-ui::admin.includes.media-uploader', [
     'mediaCollection' => app(App\Models\Document::class)->getMediaCollection('pdf'),
-    'media' => app(App\Models\Document::class)->getThumbs200ForCollection('pdf'),
+    'media' => $document->getThumbs200ForCollection('pdf'),
     'label' => 'PDF'
 ])

@@ -78,10 +78,12 @@ class DocumentController extends Controller
     public function store(StoreDocument $request)
     {
         // Sanitize input
-        $sanitized = $request->getSanitized();
+        // $sanitized = $request->getSanitized();
 
         // Store the Document
-        $document = Document::create($sanitized);
+        // $document = Document::create($sanitized);
+
+        $document = Document::create($request->validated());
 
         if ($request->ajax()) {
             return ['redirect' => url('admin/documents'), 'message' => trans('brackets/admin-ui::admin.operation.succeeded')];
